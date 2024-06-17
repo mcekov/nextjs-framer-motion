@@ -75,7 +75,7 @@ export default function Home() {
     } else {
       controls = animate(xTranslation, [0, finalPosition], {
         ease: "linear",
-        duration,
+        duration: duration,
         repeat: Infinity,
         repeatType: "loop",
         repeatDelay: 0,
@@ -83,12 +83,12 @@ export default function Home() {
     }
 
     return controls?.stop;
-  }, [xTranslation, width, duration, rerender]);
+  }, [rerender, xTranslation, duration, width]);
 
   return (
-    <main className="p-8">
+    <main className="py-8 ">
       <motion.div
-        className="flex gap-4 absolute left-0"
+        className="flex gap-4 absolute left-0 "
         ref={ref}
         style={{ x: xTranslation }}
         onHoverStart={() => {
@@ -100,7 +100,7 @@ export default function Home() {
           setDuration(FAST_DURATION);
         }}
       >
-        {images.map((image) => (
+        {[...images, ...images].map((image) => (
           <Card key={image.id} item={image} />
         ))}
       </motion.div>
