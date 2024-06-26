@@ -23,7 +23,7 @@ function Navbar() {
   }
 
   return (
-    <div className="text-sm sticky top-0 z-10 bg-white">
+    <div className="text-sm sticky top-0 z-50 bg-white">
       <div className="flex mx-auto px-4 py-5 justify-between max-w-7xl">
         {/* Left Side */}
         <section className="flex items-center gap-10">
