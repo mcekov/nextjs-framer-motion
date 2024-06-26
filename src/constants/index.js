@@ -1,3 +1,8 @@
+import todoIcon from "../../public/assets/img/icon-todo.svg";
+import calendarIcon from "../../public/assets/img/icon-calendar.svg";
+import remainderIcon from "../../public/assets/img/icon-reminders.svg";
+import planingIcon from "../../public/assets/img/icon-planning.svg";
+
 export const images = [
   {
     id: "qwe12341234123",
@@ -38,5 +43,63 @@ export const images = [
     id: "qwe12334534534345345tdfgd57896643677123",
     imgSrc: "/assets/img/scroller_images/image-8.jpg",
     alt: "Image 8",
+  },
+];
+
+export const navItems = [
+  {
+    label: "Features",
+    link: "#",
+    children: [
+      {
+        label: "Reveal Links",
+        link: "/reveal-links",
+        iconImage: todoIcon,
+      },
+      {
+        label: "Carousel",
+        link: "/carousel",
+        iconImage: calendarIcon,
+      },
+      {
+        label: "Heroes",
+        link: "/themed-hero",
+        iconImage: remainderIcon,
+      },
+      {
+        label: "Parallax",
+        link: "/parallax",
+        iconImage: planingIcon,
+      },
+    ],
+  },
+  {
+    label: "Company",
+    link: "/company",
+    children: [
+      {
+        label: "History",
+        link: "/history",
+        iconImage: "",
+      },
+      {
+        label: "Our team",
+        link: "/team",
+        iconImage: "",
+      },
+      {
+        label: "Blog",
+        link: "/blog",
+        iconImage: "",
+      },
+    ],
+  },
+  {
+    label: "About us",
+    link: "/about-us",
+  },
+  {
+    label: "Contact",
+    link: "/contact",
   },
 ];
