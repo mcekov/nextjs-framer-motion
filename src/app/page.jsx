@@ -1,17 +1,3 @@
-import AnimateBorder from "@/components/AnimateBorder";
-import AnimationControls from "@/components/AnimationControls";
-import BasicOfMotion from "@/components/BasicOfMotion";
-import Gestures from "@/components/Gestures";
-import HeroThemes from "@/components/HeroThemes";
-import RevealLinks from "@/components/RevealLinks";
-import ScrollAnimations from "@/components/ScrollAnimations";
-import SlideTabsNav from "@/components/SlideTabsNav";
-import UseInView from "@/components/UseInView";
-import UseScrollAdvanced from "@/components/UseScrollAdvanced";
-import UseScrollBasic from "@/components/UseScrollBasic";
-import ViewBasedAnimations from "@/components/ViewBasedAnimations";
-import WhileInView from "@/components/WhileInView";
-
 /* async function fetchData() {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
     cache: "force-cache",

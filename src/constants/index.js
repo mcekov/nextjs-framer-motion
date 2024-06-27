@@ -71,6 +71,11 @@ export const navItems = [
         link: "/parallax",
         iconImage: planingIcon,
       },
+      {
+        label: "Animated Border",
+        link: "/border",
+        iconImage: planingIcon,
+      },
     ],
   },
   {

@@ -75,9 +75,13 @@ body {
   }
 
   .card-wrapper::before {
-    background: conic-gradient(#1d2671, #c33764, transparent 80deg);
+    background: conic-gradient(
+      rgba(244, 114, 182, 0.4) 0deg,
+      rgba(192, 132, 252, 0.4) 0deg,
+      transparent 80deg
+    );
 
-    @apply h-[150%] w-[150%] content-[''] left-[-25%] top-[-25%] absolute animate-border-spin;
+    @apply h-[150%] w-[150%] content-[''] left-[-25%] top-[-25%]  animate-border-spin absolute;
   }
 
   .card-content {
