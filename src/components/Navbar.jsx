@@ -38,9 +38,13 @@ function Navbar() {
             {navItems.map((item, i) => (
               <div key={i} className="group relative px-2 py-3 transition-all">
                 <p className="flex cursor-pointer items-center gap-2 text-neutral-400 group-hover:text-black">
-                  <span>{item.label}</span>
-                  {item.children && (
-                    <IoIosArrowDown className="rotate-180 transition-all group-hover:rotate-0" />
+                  {item.children ? (
+                    <>
+                      <span>{item.label}</span>
+                      <IoIosArrowDown className="rotate-180 transition-all group-hover:rotate-0" />
+                    </>
+                  ) : (
+                    <Link href={item.link}>{item.label}</Link>
                   )}
                 </p>
                 {/* Dropdown */}

@@ -1,10 +1,4 @@
-/* async function fetchData() {
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
-    cache: "force-cache",
-  });
-
-  return response.json();
-} */
+import { getUniqueUuiidV4 } from "../helpers";
 
 export default async function Home() {
   return (
@@ -16,15 +10,14 @@ export default async function Home() {
               Next.js Components library
             </span>
           </span>
-
           <h1 className="mt-8 text-4xl font-extrabold tracking-tight lg:text-6xl">
             Create apps with ease
           </h1>
           <p className="max-w-xl mx-auto mt-8 text-base lg:text-xl text-secondary-foreground">
             Startup components designed to eliminate roadblocks and accelerate
-            your journey from concept to reality.
+            your journey from concept to reality. <br /> uuid:{" "}
+            {getUniqueUuiidV4()}
           </p>
-
           <div className="flex justify-center max-w-sm mx-auto mt-10">
             <button className="py-4 px-6 bg-zinc-700 rounded-full text-white hover:bg-zinc-600 shadow-lg">
               Checkout

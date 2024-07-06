@@ -32,7 +32,6 @@ module.exports = {
       animation: {
         "border-spin": "border-spin 7s linear infinite",
       },
-
       textColor: {
         skin: {
           base: withOpacity("--color-text-base"),
@@ -52,6 +51,10 @@ module.exports = {
         skin: {
           hue: withOpacity("--color-fill"),
         },
+      },
+
+      screens: {
+        xs: "540px",
       },
     },
   },

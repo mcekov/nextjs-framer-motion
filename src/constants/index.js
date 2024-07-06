@@ -76,6 +76,11 @@ export const navItems = [
         link: "/border",
         iconImage: planingIcon,
       },
+      {
+        label: "Grid Layout",
+        link: "/grid-layout",
+        iconImage: planingIcon,
+      },
     ],
   },
   {
@@ -102,6 +107,10 @@ export const navItems = [
   {
     label: "About us",
     link: "/about-us",
+  },
+  {
+    label: "Blog",
+    link: "/blog",
   },
   {
     label: "Contact",
